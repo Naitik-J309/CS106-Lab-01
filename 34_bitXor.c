@@ -7,9 +7,11 @@
  *   Max ops: 14
  *   Rating: 1
  */
+ 
+ 
 int bitXor(int x, int y)
 {
-    return 2;
+    return (~x&y);
 }
 
 int test_bitXor(int x, int y)

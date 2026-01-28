@@ -10,9 +10,9 @@
  */
 int upperBits(int n)
 {
-    return 2;
+    return (0x01<<31)>>n-1;
 }
-
+// 0000 0000 
 int test_upperBits(int x)
 {
     int result = 0;
@@ -24,7 +24,7 @@ int test_upperBits(int x)
 
 int main(void)
 {
-    int x = 32;
-    printf("expected: %x\n", upperBits(x));
-    printf("actual  : %x\n", test_upperBits(x));
+    int x = 0;
+    printf("expected: %x\n", test_upperBits(x));
+    printf("actual  : %x\n", upperBits(x));
 }

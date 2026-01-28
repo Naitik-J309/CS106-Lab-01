@@ -20,6 +20,6 @@ int test_isZero(int x)
 int main(void)
 {
     int x = 0;
-    printf("expected: %x\n", isZero(x));
+    printf("expected: %x\n", isZero(x^0));
     printf("actual  : %x\n", test_isZero(x));
 }

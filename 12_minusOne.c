@@ -8,7 +8,7 @@
  */
 int minusOne(void)
 {
-    return 2;
+    return ~0X0;
 }
 
 int test_minusOne(void)

@@ -3,13 +3,20 @@
 /* 
  * bitNor - ~(x|y) using only ~ and & 
  *   Example: bitNor(0x6, 0x5) = 0xFFFFFFF8
+ 0110
+ 0101
+ 1000
+
+ 1001
+ 1010
+ 1000
  *   Legal ops: ~ &
  *   Max ops: 8
  *   Rating: 1
  */
 int bitNor(int x, int y)
 {
-    return 2;
+    return (~x&~y);
 }
 
 int test_bitNor(int x, int y)
